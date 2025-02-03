@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    height: 130px;
+    background-color: #36D9C8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header button{
+    background-color: #FF884E;
+    border: 0;
+    height: 50px;
+    width: 175px;
+    font-weight: 600;
+}
+
+header input{
+    padding: 0px 20px;
+    margin: 0px 20px;
+    width: 350px;
+    height: 50px;
+    border: 0;
+    border-radius: 35%;
+}
+header .icono{
+    height: 30px;
+    width: 30px;
+}
+
+nav{
+    background-color: #ffa67a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    text-decoration: none;
+}
