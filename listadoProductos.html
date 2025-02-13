@@ -9,6 +9,8 @@
       href="assets/cabecera/logo.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/listado.css">
   </head>
   <body>
     <header>
@@ -18,7 +20,7 @@
         width="200"
         height="100"
       />
-      <input type="text" name="busqueda" id="busqueda" />
+      <input type="text" name="busqueda" id="busqueda" placeholder="🔍"/>
       <img
         src="assets/cabecera/email.png"
         alt="IconoEmail"
@@ -53,96 +55,122 @@
       </ul>
     </nav>
     <main>
-        <section>
-            <select name="farmacias" id="farmacias">
-                <option value="farmacias">Farmacias</option>
-                <option value="carlota">Farmacia Carlota</option>
-                <option value="cordoba">Farmacia Córdoba</option>
-                <option value="Fernan Nuñez">Farmacia Fernan Nuñez</option>
-            </select>
-            <input type="submit" value="Cesta">
-        </section>
-        <section>
-            <h2>Filtros</h2>
-            <input type="checkbox" name="receta" id="receta">
-            <label for="precio 1">Requiere Receta</label>
+      <section>
+        <select name="farmacias" id="farmacias">
+          <option value="farmacias">Farmacias</option>
+          <option value="carlota">Farmacia Carlota</option>
+          <option value="cordoba">Farmacia Córdoba</option>
+          <option value="Fernan Nuñez">Farmacia Fernan Nuñez</option>
+        </select>
+        <input type="submit" value="Cesta" />
+      </section>
+      <section>
+        <h2>Filtros</h2>
+        <input type="checkbox" name="receta" id="receta" />
+        <label for="precio 1">Requiere Receta</label>
 
-            <input type="checkbox" name="sinreceta" id="sinreceta">
-            <label for="precio 1">Sin Receta</label>
+        <input type="checkbox" name="sinreceta" id="sinreceta" />
+        <label for="precio 1">Sin Receta</label>
 
-            <input type="checkbox" name="precio1" id="precio1">
-            <label for="precio 1">Precio Ascendente</label>
+        <input type="checkbox" name="precio1" id="precio1" />
+        <label for="precio 1">Precio Ascendente</label>
 
-            <input type="checkbox" name="precio2" id="precio2">
-            <label for="precio 1">Precio Descendente</label>
+        <input type="checkbox" name="precio2" id="precio2" />
+        <label for="precio 1">Precio Descendente</label>
 
-            <input type="checkbox" name="respiratorio" id="respiratorio">
-            <label for="precio 1">Sistema Respiratorio</label>
+        <input type="checkbox" name="respiratorio" id="respiratorio" />
+        <label for="precio 1">Sistema Respiratorio</label>
 
-            <input type="checkbox" name="circulatorio" id="circulatorio">
-            <label for="precio 1">Sistema Circulatorio</label>
-        </section>
-        <section>
-            <section>
-                <article>
-                    <img src="assets/medicamentos/paracetamol.jpg" alt="paracetamol500mg" height="200" width="200">
-                    <h3>Paracetamol 500mg</h3>
-                    <p>Descripción</p>
-                    <h4>Precio</h4>
-                    <a href="detalles.html">
-                        <input type="submit" value="Comprar">
-                    </a>
-                </article>
-                <article>
-                    <img src="assets/medicamentos/ibuprofeno.jpeg" alt="ibuprofeno600mg" height="200" width="200">
-                    <h3>Ibuprofeno 600mg</h3>
-                    <p>Descripción</p>
-                    <h4>Precio</h4>
-                    <a href="detalles.html">
-                        <input type="submit" value="Comprar">
-                    </a>
-                </article>
-                <article>
-                    <img src="assets/medicamentos/aceltisteina.jpg" alt="aceltisteina600mg" height="200" width="200">
-                    <h3>Aceltisteina 600mg</h3>
-                    <p>Descripción</p>
-                    <h4>Precio</h4>
-                    <a href="detalles.html">
-                        <input type="submit" value="Comprar">
-                    </a>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <img src="assets/medicamentos/enantium.jpg" alt="enantium25mg" height="200" width="200">
-                    <h3>Enantium 25mg</h3>
-                    <p>Descripción</p>
-                    <h4>Precio</h4>
-                    <a href="detalles.html">
-                        <input type="submit" value="Comprar">
-                    </a>
-                </article>
-                <article>
-                    <img src="assets/medicamentos/enandol.jpg" alt="enadol25mg" height="200" width="200">
-                    <h3>Enadol 25mg</h3>
-                    <p>Descripción</p>
-                    <h4>Precio</h4>
-                    <a href="detalles.html">
-                        <input type="submit" value="Comprar">
-                    </a>
-                </article>
-                <article>
-                    <img src="assets/medicamentos/zolmitriptan.jpg" alt="zolmitriptan5mg" height="200" width="200">
-                    <h3>Zolmitriptam 5mg</h3>+s
-                    <p>Descripción</p>
-                    <h4>Precio</h4>
-                    <a href="detalles.html">
-                        <input type="submit" value="Comprar">
-                    </a>
-                </article>
-            </section>
-        </section>
-     
+        <input type="checkbox" name="circulatorio" id="circulatorio" />
+        <label for="precio 1">Sistema Circulatorio</label>
+      </section>
+      <section class="med">
+        <article>
+            <img
+                src="assets/medicamentos/paracetamol.jpg"
+                alt="paracetamol500mg"
+                height="200"
+                width="200"
+            />
+            <h3>Paracetamol 500mg</h3>
+            <p>Alivia el dolor y reduce la fiebre. Ideal para dolores leves.</p>
+            <h4>Precio: 3.50€</h4>
+            <a href="detalles.html">
+                <input type="submit" value="Comprar" />
+            </a>
+        </article>
+        <article>
+            <img
+                src="assets/medicamentos/ibuprofeno.jpeg"
+                alt="ibuprofeno600mg"
+                height="200"
+                width="200"
+            />
+            <h3>Ibuprofeno 600mg</h3>
+            <p>Antiinflamatorio eficaz para dolores moderados y fiebre.</p>
+            <h4>Precio: 4.20€</h4>
+            <a href="detalles.html">
+                <input type="submit" value="Comprar" />
+            </a>
+        </article>
+        <article>
+            <img
+                src="assets/medicamentos/aceltisteina.jpg"
+                alt="aceltisteina600mg"
+                height="200"
+                width="200"
+            />
+            <h3>Aceltisteina 600mg</h3>
+            <p>Útil para tratar problemas respiratorios y eliminar mucosidad.</p>
+            <h4>Precio: 5.80€</h4>
+            <a href="detalles.html">
+                <input type="submit" value="Comprar" />
+            </a>
+        </article>
+        <article>
+            <img
+                src="assets/medicamentos/enantium.jpg"
+                alt="enantium25mg"
+                height="200"
+                width="200"
+            />
+            <h3>Enantium 25mg</h3>
+            <p>Analgésico para dolores agudos de intensidad leve a moderada.</p>
+            <h4>Precio: 6.50€</h4>
+            <a href="detalles.html">
+                <input type="submit" value="Comprar" />
+            </a>
+        </article>
+        <article>
+            <img
+                src="assets/medicamentos/enandol.jpg"
+                alt="enadol25mg"
+                height="200"
+                width="200"
+            />
+            <h3>Enadol 25mg</h3>
+            <p>Medicamento para el alivio del dolor articular y muscular.</p>
+            <h4>Precio: 4.00€</h4>
+            <a href="detalles.html">
+                <input type="submit" value="Comprar" />
+            </a>
+        </article>
+        <article>
+            <img
+                src="assets/medicamentos/zolmitriptan.jpg"
+                alt="zolmitriptan5mg"
+                height="200"
+                width="200"
+            />
+            <h3>Zolmitriptan 5mg</h3>
+            <p>Tratamiento eficaz para aliviar migrañas de intensidad moderada.</p>
+            <h4>Precio: 8.20€</h4>
+            <a href="detalles.html">
+                <input type="submit" value="Comprar" />
+            </a>
+        </article>
+    </section>
+    
     </main>
     <footer>
       <section>
@@ -167,9 +195,9 @@
         <h3>Contacto</h3>
         <ul>
           <li><a href="https://www.instagram.com/">Instagram</a></li>
-          <li> <a href="https://x.com/">X</a></li>
+          <li><a href="https://x.com/">X</a></li>
           <li><a href="tel:+34644616059">Teléfono</a></li>
-          <li> <a href="mailto:a22rucral@iesgrancapitan.org">Email</a></li>
+          <li><a href="mailto:a22rucral@iesgrancapitan.org">Email</a></li>
         </ul>
       </section>
     </footer>

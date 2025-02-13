@@ -9,6 +9,8 @@
       href="assets/cabecera/logo.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/detalles.css" />
   </head>
   <body>
     <header>
@@ -18,7 +20,7 @@
         width="200"
         height="100"
       />
-      <input type="text" name="busqueda" id="busqueda" />
+      <input type="text" name="busqueda" id="busqueda" placeholder="🔍" />
       <img
         src="assets/cabecera/email.png"
         alt="IconoEmail"
@@ -53,8 +55,8 @@
       </ul>
     </nav>
     <main>
-      <section>
-        <section>
+      <section class="doble">
+        <section class="img">
           <img
             src="assets/medicamentos/paracetamol.jpg"
             alt="paracetamol500mg"
@@ -80,7 +82,7 @@
             width="200"
           />
         </section>
-        <section>
+        <section class="datos">
           <h3>Paracetamol 500mg</h3>
           <ul>
             <li>Nombre químico: N-(4-hidroxifenil)acetamida.</li>
@@ -95,75 +97,83 @@
             </li>
           </ul>
           <h4>Marca</h4>
-          <label for="marca">Tylenol</label>
-          <input type="radio" name="marca" id="marca1" />
-          <label for="marca">Tempra</label>
-          <input type="radio" name="marca" id="marca2" />
-          <label for="marca">Panadol</label>
-          <input type="radio" name="marca" id="marca3" />
+          <form action="">
+            <label for="marca"
+              >Tylenol
+              <input type="radio" name="marca" id="marca1" />
+            </label>
+            <label for="marca"
+              >Tempra
+              <input type="radio" name="marca" id="marca2" />
+            </label>
+            <label for="marca"
+              >Panadol
+              <input type="radio" name="marca" id="marca3" />
+            </label>
+          </form>
         </section>
-        <section>
-          <h3>Datos extras del medicamento</h3>
+      </section>
+      <section class="extra">
+        <h3>Datos extras del medicamento</h3>
+        <article>
           <p>
-            El paracetamol es un medicamento ampliamente utilizado con
-            propiedades analgésicas (alivia el dolor) y antipiréticas (reduce la
-            fiebre). Es efectivo para tratar dolores leves a moderados, como
-            dolores de cabeza, musculares, menstruales o de muelas, y para bajar
-            la fiebre asociada a infecciones comunes. A diferencia de los
-            antiinflamatorios no esteroides (AINEs) como el ibuprofeno, el
-            paracetamol no tiene propiedades antiinflamatorias significativas y,
-            por lo general, es más seguro para personas con problemas gástricos
-            o cardiovascul...
+            El paracetamol es un medicamento ampliamente utilizado con propiedades
+            analgésicas (alivia el dolor) y antipiréticas (reduce la fiebre). Es
+            efectivo para tratar dolores leves a moderados, como dolores de
+            cabeza, musculares, menstruales o de muelas, y para bajar la fiebre
+            asociada a infecciones comunes. A diferencia de los antiinflamatorios
+            no esteroides (AINEs) como el ibuprofeno, el paracetamol no tiene
+            propiedades antiinflamatorias significativas y, por lo general, es más
+            seguro para personas con problemas gástricos o cardiovascul...
             <input type="submit" value="Leer Más" />
           </p>
+        </article>
+      </section>
+      <section class="doble">
+        <section class="precios">
+          <h3>Comparador de precios</h3>
+          <article>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340.6929461297396!2d-4.780944144740074!3d37.884527522622506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf63204fffff%3A0x1775784e4fad006a!2sC.%20Conde%20de%20Gondomar%2C%209%2C%20Centro%2C%2014003%20C%C3%B3rdoba!5e0!3m2!1ses!2ses!4v1731525234573!5m2!1ses!2ses"
+              frameborder="0"
+              width="200"
+              height="200"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p>Farmacia 1 .- Farmacia Fernan Nuñez</p><p>Precio : X.X€</p>
+          </article>
+          <article>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340.6929461297396!2d-4.780944144740074!3d37.884527522622506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf63204fffff%3A0x1775784e4fad006a!2sC.%20Conde%20de%20Gondomar%2C%209%2C%20Centro%2C%2014003%20C%C3%B3rdoba!5e0!3m2!1ses!2ses!4v1731525234573!5m2!1ses!2ses"
+              frameborder="0"
+              width="200"
+              height="200"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p>Farmacia 2 .- Farmacia La Carlota</p><p>Precio : X.X€</p>
+          </article>
+          <article>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340.6929461297396!2d-4.780944144740074!3d37.884527522622506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf63204fffff%3A0x1775784e4fad006a!2sC.%20Conde%20de%20Gondomar%2C%209%2C%20Centro%2C%2014003%20C%C3%B3rdoba!5e0!3m2!1ses!2ses!4v1731525234573!5m2!1ses!2ses"
+              frameborder="0"
+              width="200"
+              height="200"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p>Farmacia 3 .- Farmacia el Torito</p><p>Precio : X.X€</p>
+          </article>
         </section>
-        <section>
-          <section>
-            <h3>Comparador de precios</h3>
-            <article>
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340.6929461297396!2d-4.780944144740074!3d37.884527522622506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf63204fffff%3A0x1775784e4fad006a!2sC.%20Conde%20de%20Gondomar%2C%209%2C%20Centro%2C%2014003%20C%C3%B3rdoba!5e0!3m2!1ses!2ses!4v1731525234573!5m2!1ses!2ses"
-                frameborder="0"
-                width="200"
-                height="200"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-                <p>Farmacia 1 .- <em>Precio€</em></p>
-            </article>
-            <article>
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340.6929461297396!2d-4.780944144740074!3d37.884527522622506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf63204fffff%3A0x1775784e4fad006a!2sC.%20Conde%20de%20Gondomar%2C%209%2C%20Centro%2C%2014003%20C%C3%B3rdoba!5e0!3m2!1ses!2ses!4v1731525234573!5m2!1ses!2ses"
-                frameborder="0"
-                width="200"
-                height="200"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-                <p>Farmacia 1 .- <em>Precio€</em></p>
-            </article>
-            <article>
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340.6929461297396!2d-4.780944144740074!3d37.884527522622506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf63204fffff%3A0x1775784e4fad006a!2sC.%20Conde%20de%20Gondomar%2C%209%2C%20Centro%2C%2014003%20C%C3%B3rdoba!5e0!3m2!1ses!2ses!4v1731525234573!5m2!1ses!2ses"
-                frameborder="0"
-                width="200"
-                height="200"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-                <p>Farmacia 1 .-<em>Precio€</em></p>
-            </article>
-          </section>
-          <section>
-            <h3>Resumen de compra</h3>
-            <h5>Farmacia elegia : Farmacia 2</h5>
-            <p>Precio total : Precio€</p>
-            <input type="submit" value="Comprar">
-
-          </section>
+        <section class="res">
+          <h3>Resumen de compra</h3>
+          <h5>Farmacia elegida : Farmacia 2</h5>
+          <p>Precio total : Precio€</p>
+          <input type="submit" value="Comprar" />
         </section>
       </section>
     </main>
