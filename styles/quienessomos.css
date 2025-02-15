@@ -1,21 +1,13 @@
 body {
+    margin: 0;
     box-sizing: border-box;
     position: relative;
     height: 100%;
     width: 100%;
     background-color: #eefcfa;
     display: grid;
-    grid-template-areas:
-    "header" "header" "header"
-    "nav" "nav" "nav"
-    "main" "main" "main"
-    "main" "main" "main"
-    "main" "main" "main"
-    "main" "main" "main"
-
-
-    "footer" "footer" "footer";
-    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, repeat(3, 2fr), 1fr;
 }
 
 header input{
@@ -61,8 +53,10 @@ nav ul:first-child{
     padding-left: 0;
 }
 
+
+
 header {
-    grid-area: header;
+    grid-row: 1/2;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -77,9 +71,48 @@ header button{
 }
 
 footer {
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #36D9C8;
+}
+
+main section{
+    height: 30vh;
+    width: 100vw;
+    box-sizing: border-box;
+    border: 1px black solid;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+main section h2{
+
+    width: 100%;
+    text-align: justify;
+    align-self: flex-start;
+    justify-content: flex-start;
+    padding-left: 2em;
+
+    box-sizing: border-box;
+    border: 2px black solid;
+}
+
+#fila2 h2{
+    width: 100%;
+    text-align: justify;
+    align-self: flex-start;
+    justify-content: flex-end;
+    padding-left: 10em;
+}
+
+#fila2 {
+    flex-direction: row-reverse;
+}
+
+iframe{
+    padding: 4em;
+    width: 60vw;
+    height: 20vh;
 }
