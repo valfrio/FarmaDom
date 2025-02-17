@@ -57,35 +57,121 @@
     <main>
       <section id="columna1">
         <h2>Ciudad / sede</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340.6929461297396!2d-4.780944144740074!3d37.884527522622506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf63204fffff%3A0x1775784e4fad006a!2sC.%20Conde%20de%20Gondomar%2C%209%2C%20Centro%2C%2014003%20C%C3%B3rdoba!5e0!3m2!1ses!2ses!4v1731525234573!5m2!1ses!2ses"
+            frameborder="0"
+            width="200"
+            height="200"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <form action="">
+            <section>
+              <img src="assets/iconos/chincheta.png" alt="dirección" width="24px">
+              <label for="direccion">direccion</label>
+              <input type="text" name="direccion" readonly value="C/ Condomar nº4">
+            </section>
+            <br>
+
+            <section>
+              <img src="assets/iconos/llamar.png" alt="dirección" width="24px">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" readonly value="685441768">
+            </section>
+            <br>
+            
+            <section>
+              <img src="assets/iconos/correo.png" alt="dirección" width="24px">
+              <label for="email">Correo</label>
+              <input type="email" name="email" readonly value="a23majisa@gmail.com">
+            </section>
+            <br>
+  
+            <section>
+              <img src="assets/iconos/reloj.png" alt="dirección" width="24px">
+              <label for="horario">Horario</label>
+              <input type="text" name="horario" readonly value="08:00 - 13:00">
+            </section>
+  
+            
+  
+          </form>
       </section>
 
       <section id="columna2">
         <h2>Ciudad / sede</h2>
 
-        <section id="google maps"></section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340.6929461297396!2d-4.780944144740074!3d37.884527522622506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf63204fffff%3A0x1775784e4fad006a!2sC.%20Conde%20de%20Gondomar%2C%209%2C%20Centro%2C%2014003%20C%C3%B3rdoba!5e0!3m2!1ses!2ses!4v1731525234573!5m2!1ses!2ses"
+            frameborder="0"
+            width="200"
+            height="200"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         
+          <form action="">
+            <section>
+              <img src="assets/iconos/chincheta.png" alt="dirección" width="24px">
+              <label for="direccion">direccion</label>
+              <input type="text" name="direccion" readonly value="C/ El Olivo nº4">
+            </section>
+            <br>
+
+            <section>
+              <img src="assets/iconos/llamar.png" alt="dirección" width="24px">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" readonly value="685441768">
+            </section>
+            <br>
+            
+            <section>
+              <img src="assets/iconos/correo.png" alt="dirección" width="24px">
+              <label for="email">Correo</label>
+            <input type="email" name="email" readonly value="salvador.jose.martinez.jimenez@gmail.com">
+            </section>
+            <br>
+  
+            <section>
+              <img src="assets/iconos/reloj.png" alt="dirección" width="24px">
+              <label for="horario">Horario</label>
+            <input type="text" name="horario" readonly value="09:00 - 14:00">
+            </section>
+  
+          </form>
       </section>
 
       <section id="columna3">
         <h2>Formulario</h2>
         <form action="">
           <label for="nombre">Nombre</label>
-          <input type="text" name="nombre">
+          <input type="text" name="nombre" placeholder="Introduce tu nombre y apellidos">
+          <br>
 
           <label for="telefono">Teléfono</label>
-          <input type="tel" name="telefono">
+          <input type="tel" name="telefono" placeholder="Introduce tu teléfono">
+          <br>
 
           <label for="email">Email</label>
-          <input type="email" name="email">
+          <input type="email" name="email" placeholder="Introduce tu email">
+          <br>
 
           <label for="dia">Fecha</label>
           <input type="date" name="dia">
+          <br>
 
           <label for="hora">Hora</label>
           <input type="time" name="hora">
+          <br>
 
           <label for="descripcion">Descripción</label>
-          <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Cuentanos más"></textarea>
+          <textarea name="descripcion" id="descripcion" cols="10" rows="5" placeholder="Cuentanos más"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
       </section>
     </main>
 

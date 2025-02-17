@@ -74,3 +74,61 @@ footer {
     justify-content: space-around;
     background-color: #36D9C8;
 }
+
+main{
+    height: 80vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+main section{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+
+main form {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+}
+
+input, textarea {
+    background-color: #cdf6f1;
+}
+
+main > section:last-of-type{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+#columna3 h2 {
+    margin-top: 1em;
+    justify-self: flex-start;
+    margin-bottom: 1em;
+}
+
+#columna3 form {
+    justify-self: flex-start;
+}
+
+main button {
+    align-self: flex-end;
+    height: 7%;
+    width: 50%;
+    background-color: #ffa67a;
+    margin: 1em;
+    border: solid #440FAD 1px;
+    font-weight: 700;
+}
+
+main form section {
+    display: flex !important;
+    flex-direction: row; 
+    gap: 10px;
+  }
+

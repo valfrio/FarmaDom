@@ -81,7 +81,7 @@ main section{
     height: 30vh;
     width: 100vw;
     box-sizing: border-box;
-    border: 1px black solid;
+    border: 1px #440FAD solid;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -96,8 +96,11 @@ main section h2{
     padding-left: 2em;
 
     box-sizing: border-box;
-    border: 2px black solid;
+    border: 2px #440FAD solid;
+    background-color: #ffe1d3;
 }
+
+
 
 #fila2 h2{
     width: 100%;
