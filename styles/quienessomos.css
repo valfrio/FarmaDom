@@ -114,8 +114,32 @@ main section h2{
     flex-direction: row-reverse;
 }
 
-iframe{
+video{
     padding: 4em;
-    width: 60vw;
-    height: 20vh;
+    width: 80vw;
+    height: 27vh;
+}
+
+video {
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-property: transform;
+}
+
+video:hover {
+    background-color: #FF884E;
+    transform: rotate(360deg);
+}
+
+h2{
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color; 
+}
+
+h2:hover {
+    transition-duration: 2s;
+    transition-timing-function: steps(4);
+    transition-property: background-color;
+    background-color: #E0C900;
 }
