@@ -10,78 +10,6 @@ body {
     grid-template-rows: 1fr, repeat(3, 2fr), 1fr;
 }
 
-header input{
-    height: 2em;
-    width: 40em;
-}
-
-header img:first-child {
-    padding: 2em;
-    height: 7em;
-    width: 12em;
-}
-
-nav ul{
-    grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    transition-property: color, text-decoration, font-weight, font-size;
-    transition-duration: 1s;
-    transition-timing-function: steps(10);
-}
-
-nav ul li{
-    background-color: #ffe928;
-    transition-duration: 3s;
-    transition-timing-function: ease;
-    transition-property: background-color;
-    background-color: #ffa67a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    list-style-type: none;
-    box-sizing: border-box;
-    border: solid 1px black;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-nav ul:first-child{
-    padding-left: 0;
-}
-
-header {
-    grid-row: 1/2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #36D9C8;
-    align-items: center;
-}
-
-header button{
-    background-color: #FF884E;
-    height: 3em;
-    width: 12em;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #36D9C8;
-}
-
 main{
     height: 80vh;
     display: flex;
@@ -93,8 +21,12 @@ main section{
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
+    width: 25vw;
 }
 
+main section h2, main section iframe{
+    margin-left: 35%;
+}
 
 main form {
     height: 100%;
@@ -151,7 +83,7 @@ button:hover{
 }
 
 main form section {
-    display: flex !important;
+    display: flex ;
     flex-direction: row; 
     gap: 10px;
   }
